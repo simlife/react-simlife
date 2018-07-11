@@ -1,18 +1,18 @@
 import * as React from 'react';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
-export interface IJhiPaginationProps {
+export interface ISimPaginationProps {
   items: number;
   activePage: number;
   onSelect: (page: number) => void;
   maxButtons: number;
 }
 
-export interface IJhiPaginationState {
+export interface ISimPaginationState {
   currentPage: number;
 }
 
-export class JhiPagination extends React.Component<IJhiPaginationProps, IJhiPaginationState> {
+export class SimPagination extends React.Component<ISimPaginationProps, ISimPaginationState> {
   constructor(props) {
     super(props);
     this.state = {
